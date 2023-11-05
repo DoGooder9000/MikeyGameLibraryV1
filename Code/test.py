@@ -2,8 +2,11 @@ from MikeyGames import *
 
 window(600, 800, "Test")
  
-wait(1)
+running = True
 
-print("Hello")
+while running:
+    for event in Get_Event():
+        if event == QUIT:
+            running = False
 
 close()
